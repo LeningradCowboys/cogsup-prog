@@ -1,0 +1,18 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 20:59:05
+#sha1: b28315
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+2289,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+2289,design,logged,
+2289,Experiment,started
+2292,Stimulus,presented,0
+2293,stderr,received,'Traceback (most recent call last):'
+2293,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\123.py", line 35, in <module>'
+2294,stderr,received,'    right_shape.present(clear=False, update=False)'
+2294,stderr,received,'    ^^^^^^^^^^^'
+2300,stderr,received,"NameError: name 'right_shape' is not defined. Did you mean: 'left_shape'?"

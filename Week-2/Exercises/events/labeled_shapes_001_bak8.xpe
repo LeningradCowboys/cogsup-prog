@@ -1,0 +1,28 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 19:54:23
+#sha1: 8aca87
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1471,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+1471,design,logged,
+1471,Experiment,started
+1472,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x0000017E7A4C8720>'
+1472,stderr,received,'Traceback (most recent call last):'
+1473,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_visual.py", line 266, in __del__'
+1478,stderr,received,'    if self._compression_filename is not None:'
+1479,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1479,stderr,received,"AttributeError: 'Shape' object has no attribute '_compression_filename'"
+1480,stderr,received,'Traceback (most recent call last):'
+1481,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\labeled_shapes.py", line 15, in <module>'
+1482,stderr,received,"    left_shape = stimuli.Shape(position=(-100, 0), colour='purple', vertices=vertices_triangle)"
+1483,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1483,stderr,received,"TypeError: Shape.__init__() got an unexpected keyword argument 'vertices'"
+1486,stderr,received,'Exception ignored in atexit callback: <bound method DataFile.save of <expyriment.io._files.DataFile object at 0x0000017E7A58C2D0>>'
+1486,stderr,received,'Traceback (most recent call last):'
+1487,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_files.py", line 549, in save'
+1490,stderr,received,'    os.rename(self._fullpath, tmpfile_name)'
+1491,stderr,received,"PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'data\\\\labeled_shapes_001.xpd' -> 'data\\\\17451a34-10de-4b79-82ee-e50f174838e5'"

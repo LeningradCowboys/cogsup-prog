@@ -1,0 +1,16 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 20:24:43
+#sha1: bc8c45
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+2250,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+2250,design,logged,
+2250,Experiment,started
+2251,stderr,received,'Traceback (most recent call last):'
+2251,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\123.py", line 28, in <module>'
+2252,stderr,received,'    top'
+2258,stderr,received,"NameError: name 'top' is not defined"

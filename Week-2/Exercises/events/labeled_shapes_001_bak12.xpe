@@ -1,0 +1,23 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 20:01:09
+#sha1: 796bf1
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1216,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+1216,design,logged,
+1216,Experiment,started
+1217,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x00000231FA038720>'
+1217,stderr,received,'Traceback (most recent call last):'
+1217,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_visual.py", line 266, in __del__'
+1218,stderr,received,'    if self._compression_filename is not None:'
+1218,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1218,stderr,received,"AttributeError: 'Line' object has no attribute '_compression_filename'"
+1218,stderr,received,'Traceback (most recent call last):'
+1218,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\labeled_shapes.py", line 23, in <module>'
+1219,stderr,received,"    line_left = stimuli.Line(start_position=(-100, top_y), end_position=(-100, top_y + 50), line_width=3, colour='white')"
+1219,stderr,received,'                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1219,stderr,received,"TypeError: Line.__init__() got an unexpected keyword argument 'start_position'"

@@ -1,0 +1,21 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 19:59:31
+#sha1: bce48f
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+626,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+626,design,logged,
+626,Experiment,started
+626,stderr,received,'Traceback (most recent call last):'
+627,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\labeled_shapes.py", line 15, in <module>'
+628,stderr,received,'    left_shape = stimuli.Shape((-100, 0), (128, 0, 128), *vertices_triangle)'
+628,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+628,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_shape.py", line 164, in __init__'
+629,stderr,received,'    self.add_vertices(vertex_list=vertex_list)'
+629,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_shape.py", line 417, in add_vertices'
+630,stderr,received,'    raise TypeError(type_error_message)'
+631,stderr,received,'TypeError: The method add_vertices requires a list of tuples as argument.'

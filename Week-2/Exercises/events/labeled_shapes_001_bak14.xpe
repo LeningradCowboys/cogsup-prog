@@ -1,0 +1,27 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 20:04:00
+#sha1: c6b9af
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1227,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+1227,design,logged,
+1227,Experiment,started
+1229,stderr,received,'Traceback (most recent call last):'
+1229,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\labeled_shapes.py", line 31, in <module>'
+1230,stderr,received,'    left_shape.present(clear=True, update=False)'
+1230,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_visual.py", line 1171, in present'
+1231,stderr,received,'    self.preload(inhibit_ogl_compress=True)'
+1232,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_visual.py", line 1059, in preload'
+1233,stderr,received,'    self._get_surface(),'
+1233,stderr,received,'    ^^^^^^^^^^^^^^^^^^^'
+1233,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_visual.py", line 490, in _get_surface'
+1233,stderr,received,'    tmp = self._create_surface()'
+1233,stderr,received,'          ^^^^^^^^^^^^^^^^^^^^^^'
+1233,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_shape.py", line 647, in _create_surface'
+1234,stderr,received,'    if self._anti_aliasing > 0: # Draw enlarged shape'
+1234,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^'
+1234,stderr,received,"TypeError: '>' not supported between instances of 'list' and 'int'"

@@ -1,0 +1,23 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 20:11:13
+#sha1: 0ef41a
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1452,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+1452,design,logged,
+1452,Experiment,started
+1453,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x000001AAA9088720>'
+1454,stderr,received,'Traceback (most recent call last):'
+1454,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_visual.py", line 266, in __del__'
+1455,stderr,received,'    if self._compression_filename is not None:'
+1456,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1457,stderr,received,"AttributeError: 'Shape' object has no attribute '_compression_filename'"
+1457,stderr,received,'Traceback (most recent call last):'
+1458,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\asd.py", line 14, in <module>'
+1459,stderr,received,'    left_shape = stimuli.Shape(( -100, 0), (128, 0, 128), vertex_list=vertices_triangle, line_width=0)'
+1459,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1460,stderr,received,"TypeError: Shape.__init__() got an unexpected keyword argument 'line_width'"

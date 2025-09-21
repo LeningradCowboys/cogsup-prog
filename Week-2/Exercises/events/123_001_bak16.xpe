@@ -1,0 +1,21 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 21:03:23
+#sha1: f7278c
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+5072,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+5072,design,logged,
+5072,Experiment,started
+5072,Stimulus,rotated,0, degree=-90
+5075,Stimulus,presented,0
+5076,Stimulus,presented,1
+5076,Stimulus,presented,2
+5077,Stimulus,presented,3
+5079,Stimulus,presented,4
+5081,Stimulus,presented,5
+15513,Keyboard,received,32,wait
+15513,Experiment,ended

@@ -1,0 +1,23 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 19:56:13
+#sha1: 666779
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1159,design,log,
+#design: #exp: Two Squares
+#design: block_cnt,block_id,trial_cnt,trial_id
+1159,design,logged,
+1159,Experiment,started
+1159,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x00000212020F8720>'
+1160,stderr,received,'Traceback (most recent call last):'
+1160,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_visual.py", line 266, in __del__'
+1161,stderr,received,'    if self._compression_filename is not None:'
+1161,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1162,stderr,received,"AttributeError: 'Shape' object has no attribute '_compression_filename'"
+1162,stderr,received,'Traceback (most recent call last):'
+1162,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\labeled_shapes.py", line 15, in <module>'
+1164,stderr,received,'    left_shape = stimuli.Shape(position=(-100, 0), colour=(128, 0, 128), vertices=vertices_triangle)'
+1164,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1165,stderr,received,"TypeError: Shape.__init__() got an unexpected keyword argument 'vertices'"

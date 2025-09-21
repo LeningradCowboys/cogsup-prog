@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Thu Sep 18 2025 16:49:41
+#sha1: 44520e
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1876,design,log,
+#design: #exp: Labeled_shapes
+#design: block_cnt,block_id,trial_cnt,trial_id
+1876,design,logged,
+1876,Experiment,started
+1877,stderr,received,'Traceback (most recent call last):'
+1877,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-2\\Exercises\\labeled_shapes.py", line 14, in <module>'
+1878,stderr,received,'    h = s_tri * sqrt(3) / 2                   # 两个图形的目标高度'
+1884,stderr,received,'                ^^^^'
+1885,stderr,received,"NameError: name 'sqrt' is not defined"
