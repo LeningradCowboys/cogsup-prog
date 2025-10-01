@@ -1,0 +1,13 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Wed Oct 01 2025 17:51:55
+#sha1: 00534e
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+453,Stimulus,presented,0
+453,stderr,received,'Traceback (most recent call last):'
+453,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-4\\Exercises\\timing_puzzle.py", line 20, in <module>'
+454,stderr,received,'    exp.clock.wait(max(1000 - dt))'
+454,stderr,received,'                   ^^^^^^^^^^^^^^'
+454,stderr,received,"TypeError: 'int' object is not iterable"
