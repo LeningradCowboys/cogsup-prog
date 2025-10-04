@@ -2,15 +2,29 @@ from expyriment import design, control, stimuli
 import random
 
 def load(stims):
-    pass
+    """Preload all stimuli in the iterable."""
+    for stim in stims:
+        stim.preload()
 
 def timed_draw(stims):
-    pass
-    # return the time it took to draw
+    t0 = exp.clock.time
+    exp.screen.clear()
+    for stim in stims:
+        if not stim.is_preloaded:
+            stim.preload()
+        stim.present(clear=False, update=False)
+
+    exp.screen.update()
+    
+    t1 = exp.clock.time
+    return t1 - t0
 
 def present_for(stims, t=1000):
-    pass
-
+    """Present stimuli for t milliseconds, accounting for drawing time."""  
+    draw_time = timed_draw(stims)     
+    remain = t - draw_time
+    if remain > 0:
+        exp.clock.wait(remain)
 
 """ Test functions """
 exp = design.Experiment()

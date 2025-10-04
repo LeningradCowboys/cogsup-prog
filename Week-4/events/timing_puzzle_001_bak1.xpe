@@ -1,0 +1,16 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Wed Oct 01 2025 21:02:28
+#sha1: 17affb
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+678,design,log,
+#design: #exp: timing puzzle
+#design: block_cnt,block_id,trial_cnt,trial_id
+678,design,logged,
+678,Experiment,started
+679,Stimulus,presented,0
+1680,Stimulus,presented,1
+2682,Stimulus,presented,2
+4683,Experiment,ended

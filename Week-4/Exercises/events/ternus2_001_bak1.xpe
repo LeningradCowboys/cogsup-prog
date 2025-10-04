@@ -1,0 +1,21 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Sat Oct 04 2025 09:27:58
+#sha1: 6bb2cb
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+2621,design,log,
+#design: #exp: Ternus illusion
+#design: block_cnt,block_id,trial_cnt,trial_id
+2621,design,logged,
+2621,Experiment,started
+2633,stderr,received,'Traceback (most recent call last):'
+2633,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-4\\Exercises\\ternus2.py", line 91, in <module>'
+2634,stderr,received,'    run_trial(radius=50, isi_frames=1, with_tags=False)'
+2634,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-4\\Exercises\\ternus2.py", line 71, in run_trial'
+2634,stderr,received,'    canvasA = frame_canvas(circlesA); canvasA.preload()'
+2634,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^'
+2634,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-4\\Exercises\\ternus2.py", line 43, in frame_canvas'
+2634,stderr,received,'    cv.plot(c, c.position)'
+2634,stderr,received,'TypeError: Visual.plot() takes 2 positional arguments but 3 were given'

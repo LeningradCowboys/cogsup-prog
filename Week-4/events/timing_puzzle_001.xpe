@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Wed Oct 01 2025 21:07:51
+#sha1: 65f049
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+612,design,log,
+#design: #exp: timing puzzle
+#design: block_cnt,block_id,trial_cnt,trial_id
+612,design,logged,
+612,Experiment,started
+612,stderr,received,'Traceback (most recent call last):'
+618,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-4\\Exercises\\timing_puzzle.py", line 23, in <module>'
+618,stderr,received,'    draw(stims=[fixation], canvas=exp.canvas)'
+618,stderr,received,'                                  ^^^^^^^^^^'
+619,stderr,received,"AttributeError: 'Experiment' object has no attribute 'canvas'"

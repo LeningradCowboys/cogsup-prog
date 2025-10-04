@@ -1,4 +1,5 @@
-# It said that the fixation showed 1.004 seconds, but actually no fixation showed.
+# The text said the fixation showed 1.004 seconds but there was no fixation on the screen
+
 from expyriment import design, control, stimuli
 
 exp = design.Experiment(name="timing puzzle")
@@ -9,18 +10,13 @@ control.initialize(exp)
 fixation = stimuli.FixCross()
 text = stimuli.TextLine("Fixation removed")
 
-fixation.preload()
-text.preload()
-
-control.start(subject_id=1)
-
-fixation.present()
 t0 = exp.clock.time
+fixation.present()
 dt = exp.clock.time - t0
-exp.clock.wait((1000 - dt))
+exp.clock.wait(1000 - dt)
 
-text.present()
 t1 = exp.clock.time
+text.present()
 fix_duration = (t1 - t0)/1000
 
 exp.clock.wait(1000)

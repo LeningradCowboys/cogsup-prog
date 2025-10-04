@@ -1,0 +1,19 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Sat Oct 04 2025 11:05:46
+#sha1: 4359c7
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+10548,design,log,
+#design: #exp: Ternus Illusion Demo
+#design: block_cnt,block_id,trial_cnt,trial_id
+10548,design,logged,
+10548,Experiment,started
+10555,stderr,received,'Traceback (most recent call last):'
+10555,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-4\\Exercises\\ternus2.py", line 102, in <module>'
+10555,stderr,received,'    instruction.text = "条件 1: 低 ISI (元素运动)\\n按【空格键】退出"'
+10555,stderr,received,'    ^^^^^^^^^^^^^^^^'
+10556,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\stimuli\\_textbox.py", line 156, in text'
+10556,stderr,received,'    raise AttributeError(TextBox._getter_exception_message.format('
+10556,stderr,received,'AttributeError: Cannot set text if surface exists!'

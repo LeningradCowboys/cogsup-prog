@@ -1,0 +1,26 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Sat Oct 04 2025 09:33:41
+#sha1: 7e82a9
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+755,design,log,
+#design: #exp: Ternus illusion
+#design: block_cnt,block_id,trial_cnt,trial_id
+755,design,logged,
+755,Experiment,started
+804,Stimulus,presented,6
+1008,Stimulus,presented,8
+1027,Stimulus,presented,7
+1228,Stimulus,presented,8
+1247,Stimulus,presented,6
+1448,Stimulus,presented,8
+1466,Stimulus,presented,7
+1669,Stimulus,presented,8
+1686,Keyboard,received,32,check
+1721,Stimulus,presented,15
+1923,Stimulus,presented,17
+2223,Keyboard,received,32,check
+2262,Keyboard,received,32,check
+2263,Experiment,ended

@@ -1,0 +1,12 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Sat Oct 04 2025 09:20:24
+#sha1: 7c5c80
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+6601,stderr,received,'Traceback (most recent call last):'
+6601,stderr,received,'  File "d:\\1-¼á¹ûÔÆ\\Cit¨¦\\Ñ§Ï°\\Experimental approach\\Programming\\Assignments\\Week-4\\Exercises\\ternus2.py", line 100, in <module>'
+6602,stderr,received,'    exp.screen.clear(bg_colour=BG); exp.screen.update()'
+6602,stderr,received,'    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+6602,stderr,received,"TypeError: Screen.clear() got an unexpected keyword argument 'bg_colour'"
