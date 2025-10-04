@@ -1,0 +1,84 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Sat Oct 04 2025 21:00:49
+#sha1: 04d6c7
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+604,design,log,
+#design: #exp: Ternus illusion
+#design: block_cnt,block_id,trial_cnt,trial_id
+604,design,logged,
+604,Experiment,started
+606,Stimulus,presented,0
+962,Keyboard,received,32,wait
+965,Stimulus,presented,1
+1547,Keyboard,received,32,wait
+1564,Stimulus,presented,2
+1564,Stimulus,presented,3
+1564,Stimulus,presented,4
+1785,Stimulus,presented,5
+1785,Stimulus,presented,6
+1785,Stimulus,presented,7
+2003,Stimulus,presented,2
+2004,Stimulus,presented,3
+2004,Stimulus,presented,4
+2221,Stimulus,presented,5
+2221,Stimulus,presented,6
+2221,Stimulus,presented,7
+2440,Keyboard,received,32,check
+2443,Stimulus,presented,8
+2813,Keyboard,received,32,wait
+2829,Stimulus,presented,9
+2829,Stimulus,presented,10
+2829,Stimulus,presented,11
+3331,Stimulus,presented,12
+3331,Stimulus,presented,13
+3331,Stimulus,presented,14
+3832,Stimulus,presented,9
+3832,Stimulus,presented,10
+3832,Stimulus,presented,11
+4334,Stimulus,presented,12
+4334,Stimulus,presented,13
+4334,Stimulus,presented,14
+4836,Keyboard,received,32,check
+4839,Stimulus,presented,15
+5531,Keyboard,received,32,wait
+5546,Stimulus,presented,16
+5546,Stimulus,presented,17
+5546,Stimulus,presented,18
+6049,Stimulus,presented,19
+6049,Stimulus,presented,20
+6049,Stimulus,presented,21
+6550,Stimulus,presented,16
+6550,Stimulus,presented,17
+6550,Stimulus,presented,18
+7052,Stimulus,presented,19
+7052,Stimulus,presented,20
+7052,Stimulus,presented,21
+7554,Stimulus,presented,16
+7554,Stimulus,presented,17
+7554,Stimulus,presented,18
+8054,Stimulus,presented,19
+8054,Stimulus,presented,20
+8054,Stimulus,presented,21
+8555,Stimulus,presented,16
+8555,Stimulus,presented,17
+8555,Stimulus,presented,18
+9057,Stimulus,presented,19
+9057,Stimulus,presented,20
+9057,Stimulus,presented,21
+9561,Stimulus,presented,16
+9561,Stimulus,presented,17
+9561,Stimulus,presented,18
+10061,Stimulus,presented,19
+10062,Stimulus,presented,20
+10062,Stimulus,presented,21
+10563,Stimulus,presented,16
+10563,Stimulus,presented,17
+10563,Stimulus,presented,18
+11064,Stimulus,presented,19
+11064,Stimulus,presented,20
+11064,Stimulus,presented,21
+11566,Keyboard,received,32,check
+11568,Experiment,ended

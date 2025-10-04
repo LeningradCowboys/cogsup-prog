@@ -26,7 +26,7 @@ def present_for(stims, frames=12):
     if left > 0:
         exp.clock.wait(left)
 
-def make_circles(radius, x_positions, colour=(220, 220, 220)):
+def make_circles(radius, x_positions, colour=C_BLUE):
     """    Create three circles of the same radius at given x positions; y=0 centered."""
     circles = []
     for x in x_positions:
@@ -58,8 +58,8 @@ def run_trial(radius=50, ISI=18, with_tags=False):
     B = make_circles(radius, B_pos)
 
     if with_tags:
-        add_tags(A, [C_YELLOW, C_GREEN, C_BLUE])
-        add_tags(B, [C_GREEN, C_BLUE, C_YELLOW])
+        add_tags(A, [C_YELLOW, C_RED, C_GREEN])
+        add_tags(B, [C_RED, C_GREEN, C_YELLOW])
     else:
         for s in A + B:
             s.preload()
@@ -77,7 +77,7 @@ def run_trial(radius=50, ISI=18, with_tags=False):
         if blank_ms > 0:
             exp.screen.clear(); exp.screen.update()
             exp.clock.wait(blank_ms)
-
+    exp.keyboard.clear()
 # ---------- main ----------
 if __name__ == "__main__":
     exp = design.Experiment(name="Ternus illusion")
