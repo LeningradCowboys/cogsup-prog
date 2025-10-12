@@ -17,6 +17,18 @@ def make_circle(r, pos=(0,0)):
     c.preload()
     return c
 
+def key_to_label(key):
+    mapping = {
+        K_LEFT: "left",
+        K_RIGHT: "right",
+        K_UP: "up",
+        K_DOWN: "down",
+        K_1: "1",
+        K_2: "2",
+        K_SPACE: "space",
+    }
+    return mapping.get(key, str(key))
+
 """ Experiment """
 def run_trial(side="L", radius=75):
     if side.upper() == "L":
@@ -50,7 +62,8 @@ def run_trial(side="L", radius=75):
         circle.present(False, True)
 
         key = exp.keyboard.check([K_LEFT, K_RIGHT, K_UP, K_DOWN, K_1, K_2, K_SPACE])
-
+        if key is None:
+            continue
         x, y = circle.position
 
         if key == K_LEFT:
@@ -67,11 +80,16 @@ def run_trial(side="L", radius=75):
         elif key == K_2:
             radius = min(MAX_R, radius + R_STEP)
             circle = make_circle(radius, pos=(x, y))
-        elif key == K_SPACE:
-            break
+
 
         circle.position = (x, y)
+        eye = "left" if side.upper() == "L" else "right"
+        exp.data.add([eye, key_to_label(key), radius, circle.position[0], circle.position[1]])
+        if key == K_SPACE:
+            break
 
+
+exp.add_data_variable_names(["eye", "keypress", "radius", "x_coord", "y_coord"])
 control.start(subject_id=1)
 
 intro = stimuli.TextScreen(
