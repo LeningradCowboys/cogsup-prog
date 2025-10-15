@@ -1,0 +1,27 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Wed Oct 15 2025 17:08:00
+#sha1: 05a529
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+739,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+739,design,logged,
+739,Experiment,started
+754,Stimulus,presented,19
+1404,Keyboard,received,32,wait
+1404,Stimulus,presented,0
+1906,Stimulus,presented,12
+7633,stderr,received,'Traceback (most recent call last):'
+7633,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop.py", line 87, in <module>'
+7634,stderr,received,'    run_trial(block_id, trial_id, trial_type, word, color)'
+7635,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop.py", line 70, in run_trial'
+7636,stderr,received,'    key, rt = exp.keyboard.wait(KEYS)'
+7636,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+7637,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 363, in wait'
+7637,stderr,received,'    if isinstance(callback_function, FunctionType):'
+7637,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+7638,stderr,received,'KeyboardInterrupt'

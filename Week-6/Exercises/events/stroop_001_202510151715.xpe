@@ -1,0 +1,41 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Wed Oct 15 2025 17:15:00
+#sha1: f19cd7
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+13132,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+13132,design,logged,
+13133,Experiment,started
+13185,Stimulus,presented,19
+15129,Keyboard,received,32,wait
+15129,Stimulus,presented,0
+15631,Stimulus,presented,16
+22020,Experiment,paused
+22025,Stimulus,presented,20
+495450,stderr,received,'Traceback (most recent call last):'
+495451,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop.py", line 84, in <module>'
+495451,stderr,received,'    run_trial(block_id, trial_id, trial_type, word, color)'
+495452,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop.py", line 70, in run_trial'
+495452,stderr,received,'    key, rt = exp.keyboard.wait(KEYS)'
+495452,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+495452,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 381, in wait'
+495453,stderr,received,'    Keyboard.process_control_keys(event):'
+495453,stderr,received,'    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+495453,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 145, in process_control_keys'
+495453,stderr,received,'    cls.quit_control.call_functions(event_detected_function,'
+495454,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 63, in call_functions'
+495454,stderr,received,'    confirm = cls.end_function('
+495454,stderr,received,'              ^^^^^^^^^^^^^^^^^'
+495454,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\control\\_experiment_control.py", line 322, in end'
+495454,stderr,received,'    char = Keyboard().wait_char(["y", "n"], process_control_events=False,'
+495455,stderr,received,'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+495455,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 482, in wait_char'
+495455,stderr,received,'    _internals.low_performance_sleep()'
+495456,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\_internals.py", line 19, in low_performance_sleep'
+495456,stderr,received,'    sleep(0.0001)'
+495456,stderr,received,'KeyboardInterrupt'

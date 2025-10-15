@@ -1,0 +1,27 @@
+#Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
+#date: Wed Oct 15 2025 17:01:41
+#sha1: b5b1fe
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1120,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1120,design,logged,
+1120,Experiment,started
+1137,Stimulus,presented,19
+1801,Keyboard,received,32,wait
+1802,Stimulus,presented,0
+2304,Stimulus,presented,16
+10927,stderr,received,'Traceback (most recent call last):'
+10927,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop.py", line 88, in <module>'
+10928,stderr,received,'    run_trial(block_id, trial_id, trial_type, word, color)'
+10929,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop.py", line 71, in run_trial'
+10929,stderr,received,'    key, rt = exp.keyboard.wait(KEYS)'
+10930,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+10930,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 378, in wait'
+10931,stderr,received,'    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):'
+10931,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+10931,stderr,received,'KeyboardInterrupt'
