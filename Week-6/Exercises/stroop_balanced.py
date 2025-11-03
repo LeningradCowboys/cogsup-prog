@@ -89,9 +89,10 @@ def run_trial(block_id, trial_id, trial_type, word, color):
 
 """ Build balanced blocks: full 4×4 factorial per block, shuffled """
 # Base factorial (16 combinations): one of each word×color combination
-base = [(w, c) for w in COLORS for c in COLORS]  # 4×4 = 16
-assert len(base) == N_TRIALS_IN_BLOCK, "Block size must equal the 4×4 factorial (16)."
-
+mismatch_colors = COLORS[1:] + COLORS[:1]
+base = [(w, w) for w in COLORS] + [(w, c) for w, c in zip(COLORS, mismatch_colors)]
+assert N_TRIALS_IN_BLOCK % len(base) == 0, "Block size must be a multiple of 8."
+reps = N_TRIALS_IN_BLOCK // len(base)
 # Start experiment
 control.start(subject_id=1)
 
@@ -99,7 +100,7 @@ present_instructions(INSTR_START)
 
 for block_id in range(1, N_BLOCKS + 1):
     # Copy and shuffle the 16 factorial trials for this block
-    b_trials = base[:]
+    b_trials = base * reps
     random.shuffle(b_trials)
 
     for trial_id, (word, color) in enumerate(b_trials, 1):

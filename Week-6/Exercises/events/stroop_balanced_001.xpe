@@ -1,41 +1,27 @@
 #Expyriment 1.0.0 (Python 3.11.5), .xpe-file, coding: cp936
-#date: Sun Oct 19 2025 14:55:46
-#sha1: cbf068
+#date: Mon Nov 03 2025 13:38:27
+#sha1: db95db
 #modules: 
 #display: size=(800, 600), window_mode=True, opengl=2
 #os: uname_result(system='Windows', node='czy', release='10', version='10.0.26100', machine='AMD64')
 Time,Type,Event,Value,Detail,Detail2
-709,design,log,
+1215,design,log,
 #design: #exp: Stroop
 #design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
 #design: block_cnt,block_id,trial_cnt,trial_id
-709,design,logged,
-709,Experiment,started
-717,Stimulus,presented,19
-2194,Keyboard,received,32,wait
-2194,Stimulus,presented,0
-2695,Stimulus,presented,14
-83496,Experiment,paused
-83498,Stimulus,presented,20
-90885,stderr,received,'Traceback (most recent call last):'
-90885,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop_balanced.py", line 108, in <module>'
-90885,stderr,received,'    run_trial(block_id, trial_id, trial_type, word, color)'
-90885,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop_balanced.py", line 78, in run_trial'
-90886,stderr,received,'    key, rt = exp.keyboard.wait(KEYS)'
-90886,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
-90886,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 381, in wait'
-90886,stderr,received,'    Keyboard.process_control_keys(event):'
-90886,stderr,received,'    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
-90886,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 145, in process_control_keys'
-90886,stderr,received,'    cls.quit_control.call_functions(event_detected_function,'
-90886,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 63, in call_functions'
-90886,stderr,received,'    confirm = cls.end_function('
-90886,stderr,received,'              ^^^^^^^^^^^^^^^^^'
-90886,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\control\\_experiment_control.py", line 322, in end'
-90887,stderr,received,'    char = Keyboard().wait_char(["y", "n"], process_control_events=False,'
-90887,stderr,received,'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
-90887,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 482, in wait_char'
-90887,stderr,received,'    _internals.low_performance_sleep()'
-90887,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\_internals.py", line 19, in low_performance_sleep'
-90887,stderr,received,'    sleep(0.0001)'
-90887,stderr,received,'KeyboardInterrupt'
+1215,design,logged,
+1215,Experiment,started
+1224,Stimulus,presented,19
+2832,Keyboard,received,32,wait
+2832,Stimulus,presented,0
+3333,Stimulus,presented,12
+11068,stderr,received,'Traceback (most recent call last):'
+11074,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop_balanced.py", line 109, in <module>'
+11074,stderr,received,'    run_trial(block_id, trial_id, trial_type, word, color)'
+11074,stderr,received,'  File "d:\\1-坚果云\\Cité\\学习\\Experimental approach\\Programming\\Assignments\\Week-6\\Exercises\\stroop_balanced.py", line 78, in run_trial'
+11075,stderr,received,'    key, rt = exp.keyboard.wait(KEYS)'
+11075,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+11075,stderr,received,'  File "D:\\Python\\Lib\\site-packages\\expyriment\\io\\_keyboard.py", line 378, in wait'
+11075,stderr,received,'    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):'
+11075,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+11075,stderr,received,'KeyboardInterrupt'
