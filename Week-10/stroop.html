@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mini Stroop Task</title>
+    <script src="https://unpkg.com/jspsych@8.0.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+    <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+
+  <script type="text/javascript">
+    const jsPsych = initJsPsych({
+      on_finish: function () {
+        const cleaned = jsPsych.data.get().filterCustom(trial => !trial.is_instruction && !trial.is_blank);
+        cleaned.localSave("csv", "stroop_results.csv");
+        document.body.innerHTML = "<p>Thank you!</p>";
+      }
+    });
+
+    // key mapping: respond to the COLOR of the ink
+    const KEYMAP = {
+      red: "r",
+      green: "g",
+      blue: "b"
+    };
+
+    // a few Stroop stimuli: word, ink color, congruency
+    const stroop_stimuli = [
+      { word: "RED",   color: "red",   congruency: "congruent" },
+      { word: "GREEN", color: "green", congruency: "congruent" },
+      { word: "BLUE",  color: "blue",  congruency: "congruent" },
+      { word: "RED",   color: "green", congruency: "incongruent" },
+      { word: "GREEN", color: "blue",  congruency: "incongruent" },
+      { word: "BLUE",  color: "red",   congruency: "incongruent" }
+    ];
+
+    // instructions
+    const instructions = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>Welcome to the Stroop task.</p>
+        <p>You will see color words on the screen (RED, GREEN, BLUE).</p>
+        <p><b>Respond to the COLOR of the ink, not to the word itself.</b></p>
+        <p>Press <b>R</b> for <span style='color: red'>red</span>, 
+           <b>G</b> for <span style='color: green'>green</span>, 
+           <b>B</b> for <span style='color: blue'>blue</span>.</p>
+        <p>Try to be as fast and accurate as possible.</p>
+        <p>Press any key to start.</p>
+      `,
+      choices: "ALL_KEYS",
+      data: { is_instruction: true }
+    };
+
+    let timeline = [instructions];
+
+    // build nested trials: fixation -> Stroop stimulus -> blank
+    const fixation_duration = 500;   // ms
+    const stroop_duration   = 2000;  // max duration to respond
+    const blank_duration    = 200;   // short blank
+
+    // randomize order of stimuli
+    const shuffled_stimuli = jsPsych.randomization.shuffle(stroop_stimuli);
+
+    for (let stim of shuffled_stimuli) {
+
+      const fixation = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: "<p style='font-size: 48px;'>+</p>",
+        choices: "NO_KEYS",
+        trial_duration: fixation_duration,
+        data: { phase: "fixation", is_blank: true }
+      };
+
+      const stroop_trial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: `<p style='color: ${stim.color}; font-size: 40px;'>${stim.word}</p>`,
+        choices: [KEYMAP.red, KEYMAP.green, KEYMAP.blue],
+        trial_duration: stroop_duration,
+        data: {
+          phase: "stroop",
+          word: stim.word,
+          color: stim.color,
+          congruency: stim.congruency,
+          correct_key: KEYMAP[stim.color]
+        },
+        on_finish: function(data){
+          data.correct = jsPsych.pluginAPI.compareKeys(
+            data.response,
+            data.correct_key
+          );
+        }
+      };
+
+      const blank = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: "",
+        choices: "NO_KEYS",
+        trial_duration: blank_duration,
+        data: { phase: "blank", is_blank: true }
+      };
+
+      // nested timeline: whenever this runs, we get fixation -> stroop -> blank
+      const nestedTrial = {
+        timeline: [fixation, stroop_trial, blank]
+      };
+
+      timeline.push(nestedTrial);
+    }
+
+    jsPsych.run(timeline);
+  </script>
+</html>
